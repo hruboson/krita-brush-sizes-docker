@@ -23,7 +23,7 @@
           installPhase = ''
             dest=$out/share/krita/pykrita
             mkdir -p $dest
-			cp -r src $dest/brush-sizes-docker/
+			cp -r brush-sizes-docker/ $dest/brush-sizes-docker/
             cp -r brush-sizes-docker.desktop $dest/
           '';
         };
@@ -39,7 +39,7 @@
           shellHook = ''
             target="''${XDG_DATA_HOME:-$HOME/.local/share}/krita/pykrita"
             mkdir -p "$target"
-            ln -sfn "$PWD/src" "$target/brush-sizes-docker"
+            ln -sfn "$PWD/brush-sizes-docker" "$target/brush-sizes-docker"
             ln -sfn "$PWD/brush-sizes-docker.desktop" "$target/brush-sizes-docker.desktop"
             echo "Linked plugin into $target"
             echo "Run 'krita', then enable it under Settings → Configure Krita → Python Plugin Manager (one-time)."
