@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=brush-sizes-docker
+X-Python-2-Compatible=false
+Name=Brush sizes docker
+Comment=A docker with buttons to set predefined brush sizes
