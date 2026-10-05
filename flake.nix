@@ -42,7 +42,7 @@
             ln -sfn "$PWD/brush-sizes-docker" "$target/brush-sizes-docker"
             ln -sfn "$PWD/brush-sizes-docker.desktop" "$target/brush-sizes-docker.desktop"
             echo "Linked plugin into $target"
-            echo "Run 'krita', then enable it under Settings → Configure Krita → Python Plugin Manager (one-time)."
+            echo "Run 'krita', then enable it under Settings -> Configure Krita -> Python Plugin Manager (one-time)."
           '';
         };
       });
